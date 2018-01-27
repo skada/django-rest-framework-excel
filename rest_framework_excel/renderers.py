@@ -135,7 +135,7 @@ class ExcelRenderer(BaseRenderer):
 
     def flatten_dict(self, d):
         flat_dict = OrderedDict()
-        for key, item in d.iteritems():
+        for key, item in d.items():
             key = str(key)
             flat_item = self.flatten_item(item)
             nested_item = self.nest_flat_item(flat_item, key)
